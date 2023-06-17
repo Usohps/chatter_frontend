@@ -4,13 +4,13 @@ import { FiEye } from "react-icons/fi";
 function Login() {
   return (
     <>
-      <div className="w-full  md:min-h-screen md:max-h-screen h-full flex flex-col justify-center items-center border">
-        <div className="w-full min-h-screen md:max-h-screen  flex border">
+      <div className="container m-auto md:min-h-screen md:max-h-screen h-full flex flex-col justify-center items-center">
+        <div className="w-full min-h-screen md:max-h-screen  flex ">
           <div
-            className="hidden  md:flex flex-col justify-center items-center w-1/2 border bg-cover"
+            className="hidden  md:flex flex-col justify-center items-center w-1/2 border bg-cover opacity-90"
             style={{ backgroundImage: `url(${mySvg})` }}
           >
-            <div className="text-center text-white">
+            <div className="text-center p-3 text-gray-100 font-extrabold">
               <h1>Cozy</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -29,15 +29,15 @@ function Login() {
               <input
                 type="text"
                 placeholder="name@mail.com"
-                className="border p-2"
+                className="border rounded p-2"
               />
             </div>
-            <div className="flex flex-col relative  ">
+            <div className="flex flex-col relative ">
               <label htmlFor="">Password</label>
-              <input type="password" className="border p-2" />
-              <button>
+              <input type="password" className="border rounded p-2" />
+              <span>
                 <FiEye className="absolute right-5 top-9" />
-              </button>
+              </span>
             </div>
             <div className="w-full text-center">
               <button className=" w-[200px] text-white bg-blue-500 p-1 shadow-xl border-[#44A0A0] rounded-md">

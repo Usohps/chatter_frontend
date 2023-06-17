@@ -13,12 +13,12 @@ function AuthPage() {
     }
   return (
     <>
-    <div className='flex container justify-center m-auto items-center border p-2 shadow-lg'>
+    <div className='flex container justify-center m-auto items-center p-2 shadow-lg'>
         <button className='outline-none w-[250px] border-b-4 border-b-[#D9D9D9]  pb-1 focus:border-b-4 focus:border-blue-500' onClick={handleToggle}>Sign Up</button>
         <button className='outline-none w-[250px] border-b-4 border-b-[#D9D9D9] pb-1 focus:border-b-4 focus:border-blue-500' onClick={handleToggle}>Login</button>
     </div>
     <div>
-        {switchForm ? <SignUp/> : <Login/>}
+        {switchForm ? <SignUp setSwitchForm={setSwitchForm}/> : <Login/>}
     </div>
     </>
   )

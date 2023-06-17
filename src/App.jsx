@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<LandingPage />} />
-    <Route path="" element={<AuthPage />} />
+    <Route path="auth" element={<AuthPage />} />
     <Route path="signup" element={<SignupModal/>} />
     </Routes>
     </BrowserRouter>
